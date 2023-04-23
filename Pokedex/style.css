@@ -1,0 +1,69 @@
+*{ /*  */
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', sans-serif;
+}
+
+body{ /* Configuração da imagem de fundo, e as imagens que foram colocadas junto com o texto*/
+    background: linear-gradient(to right , #d4d3dd, #efefbb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{ /* Mudar o h1 */ 
+    letter-spacing: 5px; /* afasta as palavras do titulo */
+}
+
+.pokeContainer{ /* Aqui configuramos tudo que esta no container como colocar um do lado do outro centralização  */ 
+    display: flex;
+    flex-wrap: wrap; /* Coloca as imagens uma do lado da outra */
+    align-items: center; 
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon{ /* Aqui vamos configurar o container pokemon e tudo que esta nele  */ 
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); /* Fazer a sombra */
+    margin: 10px; /* Distancia de um box para outra */
+    padding: 20px; /* aumento da box */
+    text-align: center;
+}
+
+.imgContainer{ /* Configurar o que esta atras da imagem do pokemon */
+    display: flex; /* ativa o justify-content*/
+    justify-content: center; /* Deixar as imagens no centro*/
+    align-items: center;
+    background-color: rgba(255, 255, 255,0.6);/* Criar um quadrado atras da imagem e o 0.6 e a clareza*/
+    border-radius: 50%; /* Aqui fla para po RGBA ficar 50% com isso vira um ceiculo*/
+    width: 120px;  /* Aqui aumentamos  o container*/
+    height: 120px; /* Aqui aumentamos  o container*/
+    text-align: center;
+}
+
+.imgContainer img{ 
+    max-width: 90%;
+}
+
+.info { /* Aumentamos a ditancia das paravras do container info */
+    margin-top: 20px;
+}
+
+.number {/* Configuração do conteiner number que é o numero 1 */
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2px 13px; /* Configuramos o tamanho da backgrround-color com 2 de autura e
+    13 de largura  */
+    border-radius: 10px;  /* Deixamos redondo */
+    font-size: 0.8rem; /* tamano da fonte */
+}
+
+.name {/*  */
+    margin: 15px 0 7px; /* Configuramos a distancia que o container name vai ficar 
+    das coisas de cima baixo e dos lados aonde o 0 representa embaixo*/
+    letter-spacing: 1.5px;
+}
